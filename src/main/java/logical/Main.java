@@ -32,7 +32,7 @@ public class Main {
         Scanner console = new Scanner(System.in);
         System.out.println("Please enter a valid URL: ");
         String url = console.next();
-
+        //getInstance().httpProcess();
         getInstance().connection(url);
 
 
