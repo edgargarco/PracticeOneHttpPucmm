@@ -1,5 +1,6 @@
 package logical;
 
+import lombok.NoArgsConstructor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -7,35 +8,32 @@ import org.jsoup.select.Elements;
 
 
 import java.io.*;
+import java.net.URL;
+import java.util.Scanner;
+
+@NoArgsConstructor
 
 public class Main {
-    Document doc;
-    Elements img;
+    private  static ClientHttp client= null;
 
-    public Main() {
-        this.doc = doc;
-        this.img = img;
-    }
-
-    private int connection(String URL,String tag){
-       try {
-                doc = Jsoup.connect(URL).get();
-                Elements tagElement = doc.getElementsByTag(tag);
-                return tagElement.size();
-        } catch (IOException e) {
-                 e.printStackTrace();
-                 return 0;
+    public static ClientHttp getInstance(){
+        if(client == null){
+            client= new ClientHttp();
         }
+        return  client;
     }
 
-    public static void main(String[] args) {
 
-        Main n = new Main();
-        System.out.println(n.connection("http://localhost:5000/","p"));
-
-    //Elements img = n.connection("http://www.google.com").getElementsByTag("img");
+    public static void main(String[] args) throws IOException {
 
 
+       // String url = "http://localhost:5000/";
+        getInstance().asciiArt();
+        Scanner console = new Scanner(System.in);
+        System.out.println("Please enter a valid URL: ");
+        String url = console.next();
+
+        getInstance().connection(url);
 
 
 
