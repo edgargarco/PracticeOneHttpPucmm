@@ -29,11 +29,13 @@ public class Main {
 
        // String url = "http://localhost:5000/";
         getInstance().asciiArt();
-        Scanner console = new Scanner(System.in);
+        //Scanner console = new Scanner(System.in);
         System.out.println("Please enter a valid URL: ");
-        String url = console.next();
-        //getInstance().httpProcess();
+        //String url = console.next();
+        String url = "http://itachi.avathartech.com:4567/opcion2.html";
+
         getInstance().connection(url);
+        //getInstance().httpProcess();
 
 
 

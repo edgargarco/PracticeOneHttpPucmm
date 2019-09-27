@@ -12,6 +12,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/logical/ClientHttp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/logical/ClientHttp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/logical/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/logical/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/new.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logical/ClientHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logical/ClientHttp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logical/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logical/Main.java" afterDir="false" />
     </list>
@@ -119,7 +121,12 @@
       <workItem from="1568606212305" duration="1158000" />
       <workItem from="1568607577580" duration="2361000" />
       <workItem from="1568637638880" duration="5626000" />
-      <workItem from="1568653456527" duration="3070000" />
+      <workItem from="1568653456527" duration="3718000" />
+      <workItem from="1568665352492" duration="322000" />
+      <workItem from="1568919851488" duration="49000" />
+      <workItem from="1569523258069" duration="1903000" />
+      <workItem from="1569529881199" duration="3742000" />
+      <workItem from="1569552626506" duration="5245000" />
     </task>
     <servers />
   </component>
