@@ -27,20 +27,14 @@ public class ClientHttp {
 
 
         public void httpProcess(Elements tagElement) throws IOException {
-
+            System.out.println("\nSend params Response:\n");
             for(Element form : getTagElement()){
                 if(form.attr("method").equalsIgnoreCase("POST")){
+                    Connection.Response response =  ((FormElement) form).submit().data("asignatura", "practica1").header("matricula","20161143").execute();
 
-                    Connection.Response response =  ((FormElement) form).submit().data("asignatura", "practica1").header("matricula","20161229").execute();
                     System.out.println(response.body());
-
-
                 }
             }
-
-
-
-
         }
         public void connection(String URL){
                 setUrl(URL);
@@ -72,7 +66,7 @@ public class ClientHttp {
                 System.out.println("    Amount of Forms using POST Method: "+tagElement.select("form[method=POST]").size());
                 System.out.println("    Amount of Forms using GET Method: "+tagElement.select("form[method=GET]").size());
                 System.out.println("Input field types inside Form via POST: ");
-                httpProcess(tagElement.select("form[method=POST]"));
+
                 for(int i=0;i<tagElement.select("form[method=POST]").select("input").size();i++){
 
                         System.out.println("    Type: "+tagElement.select("form[method=POST]").select("input").get(i).attr("type")
@@ -83,6 +77,7 @@ public class ClientHttp {
                     System.out.println("    Type: "+tagElement.select("form[method=GET]").select("input").get(i).attr("type")
                             +" "+"Name: "+tagElement.select("form[method=POST]").select("input").get(i).attr("name"));
                 }
+            httpProcess(tagElement.select("form[method=POST]"));
         }
 
         public void asciiArt(){
