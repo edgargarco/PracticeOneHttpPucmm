@@ -35,7 +35,7 @@ public class Main {
         String url = "http://itachi.avathartech.com:4567/opcion2.html";
 
         getInstance().connection(url);
-        //getInstance().httpProcess();
+        //getInstance().httpProcess(url);
 
 
 

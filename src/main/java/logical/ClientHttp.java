@@ -1,48 +1,43 @@
 package logical;
 
-import com.sun.tools.doclint.Entity;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.apache.http.*;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
+
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
-import java.io.*;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import org.jsoup.select.Elements;
+import org.jsoup.nodes.FormElement;
+import java.io.IOException;
+
 
 @NoArgsConstructor
 @Getter
 @Setter
 public class ClientHttp {
-        private CloseableHttpClient client;
-        private HttpGet get;
-        private CloseableHttpResponse response;
-        private HttpEntity entity;
+
         private Document doc;
         private Elements tagElement;
         private String url;
         private String[] aux;
-        private HttpPost httppost;
 
 
-        public void httpProcess() throws IOException {
+
+        public void httpProcess(Elements tagElement) throws IOException {
+
+            for(Element form : getTagElement()){
+                if(form.attr("method").equalsIgnoreCase("POST")){
+
+                    Connection.Response response =  ((FormElement) form).submit().data("asignatura", "practica1").header("matricula","20161229").execute();
+                    System.out.println(response.body());
+
+
+                }
+            }
+
 
 
 
@@ -72,12 +67,14 @@ public class ClientHttp {
                         e.printStackTrace();
                 }
         }
-        public void formClassification(Elements tagElement){
+        public void formClassification(Elements tagElement) throws IOException {
 
                 System.out.println("    Amount of Forms using POST Method: "+tagElement.select("form[method=POST]").size());
                 System.out.println("    Amount of Forms using GET Method: "+tagElement.select("form[method=GET]").size());
                 System.out.println("Input field types inside Form via POST: ");
+                httpProcess(tagElement.select("form[method=POST]"));
                 for(int i=0;i<tagElement.select("form[method=POST]").select("input").size();i++){
+
                         System.out.println("    Type: "+tagElement.select("form[method=POST]").select("input").get(i).attr("type")
                         +" "+"Name: "+tagElement.select("form[method=POST]").select("input").get(i).attr("name"));
                 }

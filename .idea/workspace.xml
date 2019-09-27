@@ -4,16 +4,15 @@
     <list default="true" id="a1bd58c6-5d0e-47b9-91bd-10c0ae622f88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/logical/ClientHttp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/logical/ClientHttp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/logical/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/logical/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/new.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logical/ClientHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logical/ClientHttp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logical/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logical/Main.java" afterDir="false" />
     </list>
@@ -126,7 +125,9 @@
       <workItem from="1568919851488" duration="49000" />
       <workItem from="1569523258069" duration="1903000" />
       <workItem from="1569529881199" duration="3742000" />
-      <workItem from="1569552626506" duration="5245000" />
+      <workItem from="1569552626506" duration="10632000" />
+      <workItem from="1569579025305" duration="523000" />
+      <workItem from="1569583908803" duration="624000" />
     </task>
     <servers />
   </component>
